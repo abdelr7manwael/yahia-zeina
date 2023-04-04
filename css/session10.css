@@ -1,0 +1,50 @@
+/* 
+* => all elements 
+ */
+
+*{
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.clear{
+    clear: both; /* eraser */
+}
+
+.zeina{
+    background-color: red;
+}
+
+.b{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    float: left;
+}
+
+.a{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    float: right;
+}
+
+
+.bakery{
+    text-align: center;
+}
+
+.item{
+    width: 32%;
+    float: left;
+    margin: 10px 5px;
+}
+
+.item img{
+    width: 100%;
+}

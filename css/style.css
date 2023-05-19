@@ -1,0 +1,84 @@
+.icons {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.icons i {
+    font-size: 25px;
+    background-color: blueviolet;
+    padding: 10px;
+    color: white;
+    margin: 0 5px;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+}
+
+.circle i {
+
+    border-radius: 50%;
+}
+
+.icons i:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.its-color {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.its-color i {
+    font-size: 40px;
+    padding: 10px;
+
+}
+
+.its-color .fa-facebook {
+    color: blue;
+}
+
+.its-color .fa-whatsapp {
+    color: green;
+}
+
+.its-color .fa-youtube {
+    color: red;
+}
+
+
+
+.its-color .fa-twitter {
+    color: skyblue;
+}
+
+/* ----------------------------------------------- */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.clear{
+    clear: both;
+}
+
+
+.person{
+    width: 24%;
+    float: left;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 5px;
+}
+.person .social i{
+    font-size: 25px;
+    color: darkblue;
+    margin: 0 5px;
+}
+.person .social i:hover{
+    color: skyblue;
+}
+.person img{
+    width: 100%;
+    margin-bottom: 10px;
+}

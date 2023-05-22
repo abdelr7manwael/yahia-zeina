@@ -1,84 +1,158 @@
-.icons {
+section{
     padding: 50px 0;
-    text-align: center;
 }
-
-.icons i {
-    font-size: 25px;
-    background-color: blueviolet;
-    padding: 10px;
-    color: white;
-    margin: 0 5px;
-    border: 1px solid blueviolet;
-    cursor: pointer;
-}
-
-.circle i {
-
-    border-radius: 50%;
-}
-
-.icons i:hover {
-    background-color: white;
-    color: blueviolet;
-}
-
-.its-color {
-    padding: 50px 0;
-    text-align: center;
-}
-
-.its-color i {
-    font-size: 40px;
-    padding: 10px;
-
-}
-
-.its-color .fa-facebook {
-    color: blue;
-}
-
-.its-color .fa-whatsapp {
-    color: green;
-}
-
-.its-color .fa-youtube {
-    color: red;
-}
-
-
-
-.its-color .fa-twitter {
-    color: skyblue;
-}
-
-/* ----------------------------------------------- */
 .container{
     width: 80%;
     margin: auto;
-}
-
-.clear{
-    clear: both;
-}
-
-
-.person{
-    width: 24%;
-    float: left;
     text-align: center;
-    border: 2px solid black;
-    margin: 0 5px;
 }
-.person .social i{
-    font-size: 25px;
-    color: darkblue;
-    margin: 0 5px;
+
+.title{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: teal;
 }
-.person .social i:hover{
-    color: skyblue;
+
+.box {
+    width: 400px;
+    height: 400px;
+    /* margin: auto; */
+    margin: 10px auto;
 }
-.person img{
-    width: 100%;
-    margin-bottom: 10px;
+
+.ani-color {
+    animation-name: ani-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* % */
+@keyframes ani-color {
+    0% {
+        background-color: yellow;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: orangered;
+    }
+
+    60% {
+        background-color: red;
+    }
+
+    80% {
+        background-color: blueviolet;
+    }
+
+    100% {
+
+        background-color: blue;
+    }
+
+}
+
+
+.ani-image {
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    animation-name: ani-image;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes ani-image {
+
+    0% {
+        background-image: url(../img/item1.jpg);
+    }
+
+    20% {
+        background-image: url(../img/item2.jpg);
+    }
+
+    40% {
+        background-image: url(../img/item3.jpg);
+    }
+
+    60% {
+        background-image: url(../img/item1.jpg);
+    }
+
+    80% {
+        background-image: url(../img/item2.jpg);
+    }
+
+    100% {
+        background-image: url(../img/item3.jpg);
+    }
+
+}
+
+
+.scale-with-width img {
+    width: 200px;
+}
+
+
+.scale-with-width img:hover {
+    width: 400px;
+}
+
+/* transform */
+.scale-with-transform img {
+    width: 200px;
+    transition: transform 0.5s;
+}
+
+.scale-with-transform img:hover{
+    transform: scale(1.5);
+}
+
+/* rotate */
+
+.rotate-with-transform img {
+    width: 200px;
+    transition: transform 1s;
+
+}
+
+.rotate-with-transform img:hover{
+    transform: rotate(360deg);
+}
+/* ----------------------------- */
+.pre-loader img,
+.pre-loader i
+{
+    animation-name: pre-loader;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+.pre-loader i{
+    font-size: 40px;
+    margin: 0 40px;
+}
+.pre-loader img{
+    width: 200px;
+}
+
+@keyframes pre-loader {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

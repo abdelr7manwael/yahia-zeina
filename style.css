@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /* solve the padding and border problems */
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* ----------------------- */
+.parent {
+    height: 800px;
+    background-color: #ccc;
+    display: flex;
+}
+
+.child {
+    width: 24%;
+    height: 200px;
+    background-color: crimson;
+    border: 1px solid white;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.illustration .parent {
+    flex-direction: row;
+    /* default */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* right- left*/
+    align-items: flex-start;
+    /*top - bottom*/
+}
+
+.english-top .parent{
+    justify-content: space-between;
+}
+
+.arabic-bottom .parent{
+    flex-direction: row-reverse;
+    justify-content: space-between;    
+    align-items: flex-end;
+}
+
+
+.center-center .parent{
+    align-items: center;
+    justify-content: center;
+}
